@@ -2,7 +2,7 @@ name: Github Actions Maven Build
 
 on:
   push:
-    branches: [ JA-001-GHActions ]
+    branches: [ main ]
 
 jobs:
   build:
