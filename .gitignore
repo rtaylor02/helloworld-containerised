@@ -1,0 +1,12 @@
+.gitignore
+*.iml
+.git/
+.svn/
+.idea/
+**/target/*
+*.ipr
+*.iws
+*.log
+ivy-cache/*
+ivy-local/*
+coverage/*
