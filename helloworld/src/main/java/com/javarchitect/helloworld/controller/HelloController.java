@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 @CrossOrigin
 public class HelloController {
-    @Value("${name}")
+    @Value("${alienname}")
     private String appEnv;
 
     @GetMapping({"", "greeting"})
