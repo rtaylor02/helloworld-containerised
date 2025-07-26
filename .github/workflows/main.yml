@@ -19,7 +19,7 @@ jobs:
           distribution: oracle
       # Build maven project
       - name: Step 3 - Build maven
-        run: mvn -B package --file pom.xml
+        run: mvn clean package
       # Display contents of target folder build by Step 3
       - name: Step 4 - Print 'target' folder
         run: |
