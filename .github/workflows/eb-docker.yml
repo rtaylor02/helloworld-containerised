@@ -61,11 +61,6 @@ jobs:
               {
                 "ContainerPort": 8080
               }
-            ],
-            "Environment": [
-              { "Name": "DB_USER", "Value": "${{ secrets.DB_USER }}" },
-              { "Name": "DB_PASSWORD", "Value": "${{ secrets.DB_PASSWORD }}" },
-              { "Name": "API_KEY", "Value": "${{ secrets.API_KEY }}" }
             ]
           }
           EOF
