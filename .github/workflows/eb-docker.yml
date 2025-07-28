@@ -52,7 +52,7 @@ jobs:
           IMAGE_URI=${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
           cat > Dockerrun.aws.json <<EOF
           {
-            "AWSEBDockerrunVersion": 1,
+            "AWSEBDockerrunVersion": "1",
             "Image": {
               "Name": "$IMAGE_URI",
               "Update": "true"
@@ -82,5 +82,5 @@ jobs:
           application_name: ${{ env.EB_APP_NAME }}
           environment_name: ${{ env.EB_ENV_NAME }}
           region: ${{ env.AWS_REGION }}
-          version_label: 6.0.0
+          version_label: ${{ env.EB_VERSION_LABEL }}
           deployment_package: deploy.zip
