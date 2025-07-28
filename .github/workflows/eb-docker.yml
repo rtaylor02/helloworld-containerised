@@ -52,7 +52,7 @@ jobs:
           IMAGE_URI=${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
           cat > Dockerrun.aws.json <<EOF
           {
-            "AWSEBDockerrunVersion": 3,
+            "AWSEBDockerrunVersion": 1,
             "Image": {
               "Name": "$IMAGE_URI",
               "Update": "true"
