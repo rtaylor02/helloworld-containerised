@@ -1,0 +1,14 @@
+name: Deploy to Elastic Beanstalk (Docker)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Java version
+        run: java --version
+
+      
